@@ -1,0 +1,417 @@
+* { 
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+    
+  body {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+    background: #E2D8D2;
+  }
+
+  /* Navigation Styles */
+
+  li {
+      text-decoration: none;
+  }
+
+  ul {
+
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      justify-content: space-between;
+      list-style-type: none;
+    }
+
+  .nav-links {
+      list-style: none;
+  }
+
+  .name {
+      color: #00755F;
+      font-family: 'Dancing Script', cursive;
+      font-size: 3.5rem;
+  }
+
+  h1 {
+      padding: 15px;
+  }
+
+  .nav-links li {
+      display: block;
+      padding: 0 20px;
+      text-transform: uppercase;
+      background-color: transparent;
+      background-color: rgba(255,250,250, 0.5);
+      padding: 10px;
+      margin: 5px;
+  }
+
+  a {
+      display: block;
+      text-decoration: none;
+      font-weight: bold;
+      color: black;
+  }
+  
+  a:hover {
+      color: #DC751E;
+  }
+
+  /* Profile image */
+
+  .profile-img {
+     box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.5);
+      width: 50%;
+      height: auto;
+      border: solid transparent 1px;
+      border-radius: 50%;
+      margin: 20px;
+  }
+
+  /* main styles */
+
+  .intro {      
+    text-align: left;
+    font-weight: bolder;
+    font-size: 1.1em;
+  }
+
+  p {
+      padding: 10px;
+      font-size: 1.1em;
+  }
+
+  h2 {
+    color: #DC751E;
+    font-family: 'Benne', serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight:bolder;
+    margin-top: 50px;
+    padding-bottom: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+  }
+
+  h3 {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+  }
+
+  .contact-info {
+      padding: 10px;
+
+  }
+
+  .intro {
+      padding: 50px;
+      margin-left: 10px;
+  }
+
+
+
+  .portfolio-img {
+      width: 90%;
+      height: auto;
+  }
+
+  .contact-info {
+    display: inline;
+}
+
+.portfolio p {
+    margin-bottom: 40px;
+}
+
+#skills p {
+    margin-bottom: 40px;
+    text-align: left;
+    padding: 25px;
+    padding-top: 10px;
+}
+
+#main-section{
+    background-color: rgb(255,250,250);
+    padding-bottom: 50px;
+} 
+
+#contact a {
+    margin-top: 1px;
+    display: inline;
+}
+
+#contact p {
+    margin-bottom: 50px;
+}
+
+#skills {
+    margin-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#second-section {
+    background-color: rgb(245, 243, 244);
+    padding-bottom: 50px;
+}
+
+/* Style all font awesome icons */
+.fa::before {
+    padding-top: 25px;
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .fa {
+      padding-top: 20px;
+  }
+  
+  /* Add a hover effect */
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+
+  /* footer styles */
+
+  footer {
+      margin-top: 1px;
+      padding-top: 75px;
+      font-weight: bold;
+  }
+
+  .footer {
+      display: flex;
+      flex-direction: row ;
+      justify-content: space-between;
+      padding: 10px;
+  }
+
+  .footer li {
+      margin-top:15px;
+      margin-bottom: 15px;
+  }
+
+  .top-link {
+      text-transform: uppercase;
+  }
+  .top-link:hover {
+      cursor: pointer;
+  }
+  
+  .bottom-nav {
+      display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+
+    .top-section {
+        width: 100%;
+        display: block;
+        position: relative;
+        min-height: 400px;
+    }
+    
+    .top-section::after{
+        content:"";
+        background: url(background.jpg) no-repeat fixed;
+        background-size: cover;
+        opacity: 0.4;
+        top: 0;
+        bottom: 0;
+        right:0;
+        left: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .nav-links li {
+        background-color: transparent;
+    }
+
+ul {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.profile-img {
+    float: left;
+    width: 22%;
+    margin: 10px 50px 50px 50px;
+}
+
+.intro {
+    text-align: left;
+    font-size: 1em;
+    padding: 10px 100px 50px 100px;
+    max-height: 100vh;
+    line-height: 1;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.portfolio {
+    flex: 50%;
+}
+
+#skills{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.skills {
+    flex:50%;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer li:first-child {
+    margin-right: auto;
+}
+
+.bottom-nav {
+    display: initial;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.top-link {
+    display: none;
+}
+
+h2{
+    margin-top: 0;
+    padding-top: 100px;
+}
+}
+
+
+  @media screen and (min-width: 1024px) {
+
+    .portfolio {
+        flex: 33%;
+    }
+
+    .intro {
+        font-size: 1.1em;
+        line-height: 1.2;
+        float: right;
+        text-align: left;
+        max-width: 50%;
+        margin-right: 10%;
+        padding: 10px 20px 50px 20px;
+    }
+
+
+    .profile-img {
+        float: left;
+        box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.5);
+        max-width: 300px;
+        border-radius: 10%;
+        width: 20%;
+        height: auto;
+        border: solid transparent 1px;
+        margin-right: 0;
+        margin-left: 10%;
+    }
+
+ h2{
+        margin-top: 0;
+    }
+    
+    .main-header {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 75px;
+    }
+
+    .nav-links {
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+
+    h1 {
+    margin-right: auto;
+    padding-top: 20px;
+    padding-left: 20px;
+    }
+
+    .name {
+        font-size: 6.5em;
+    }
+
+    .main-header {
+        margin-bottom: 25px;
+    }
+    
+    .nav-links li {
+        display: block;
+        padding: 0 20px;
+        text-transform: uppercase;
+        background-color: transparent;
+        padding: 10px;
+        font-size: 1.3em;
+        margin: 5px;
+    }
+
+    .top-section {
+        width: 100%;
+        /* height: 100vh; */
+        display: block;
+        position: relative;
+        min-height: 475px;
+    }
+    
+    .top-section::after{
+        content:"";
+        background: url(background.jpg) no-repeat fixed;
+        background-size: cover;
+        opacity: 0.4;
+        top: 0;
+        bottom: 0;
+        right:0;
+        left: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+
+  }
+
+  @media screen and (min-width: 1300px) {
+    .intro {
+        font-size: 1.1rem;
+        line-height: 1.60;
+  }
+  .profile-img {
+      width: 22%;
+      max-width: 400px;
+  }
+  h2 {
+      padding-top: 150px;
+  }
+
+}
+
+
+
+
